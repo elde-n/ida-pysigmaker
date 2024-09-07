@@ -1,24 +1,27 @@
 # ida-pysigmaker
 A port of @A200K's [IDA-Pro-SigMaker](https://github.com/A200K/IDA-Pro-SigMaker) to IDA Python.
 
-Signature Maker Plugin for IDA Pro 8.3
+Signature Maker Plugin for IDA Pro 9.0
+Should be cross platform.
 
 ## Requirements
 - IDA Python
 - Python 3
 
 ## Installation
-Drop into plugins folder of your IDA installation.
 
-`%AppData%\Hex-Rays\IDA Pro\plugins`
+```sh
+cd ~/.idapro/plugins
+wget https://raw.githubusercontent.com/elde-n/ida-pysigmaker/master/sigmaker.py
+```
 
 ## Usage
-In disassembly view, select a line you want to generate a signature for, and press 
+In disassembly view, select a line you want to generate a signature for, and press
 **CTRL+ALT+S**
-![](https://i.imgur.com/b4MKkca.png)
+![](assets/1.png)
 
 The generated signature will be printed to the output console, as well as copied to the clipboard:
-![](https://i.imgur.com/mTFbKce.png)
+![](assets/2.png)
 
 ___
 
@@ -31,21 +34,22 @@ ___
 
 ___
 ### Finding XREFs
+
 Generating code Signatures by data or code xrefs and finding the shortest ones is also supported:
-![](https://i.imgur.com/P0VRIFQ.png)
+![](assets/3.png)
 
 ___
 ### Signature searching
 Searching for Signatures works for supported formats:
 
-![](https://i.imgur.com/lD4Zfwb.png)
+![](assets/4.png)
 
 Just enter any string containing your Signature, it will automatically try to figure out what kind of Signature format is being used:
 
-![](https://i.imgur.com/oWMs7LN.png)
+![](assets/5.png)
 
 Currently, all output formats you can generate are supported.
 
 Match(es) of your signature will be printed to console:
 
-![](https://i.imgur.com/Pe4REkX.png)
+![](assets/6.png)

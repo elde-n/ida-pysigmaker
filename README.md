@@ -1,8 +1,7 @@
 # ida-pysigmaker
 A port of @A200K's [IDA-Pro-SigMaker](https://github.com/A200K/IDA-Pro-SigMaker) to IDA Python.
 
-Signature Maker Plugin for IDA Pro 9.0
-Should be cross platform.
+Signature Maker Plugin for IDA Pro 9.0 that should be cross platform.
 
 ## Requirements
 - IDA Python
